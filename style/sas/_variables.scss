@@ -1,0 +1,86 @@
+//colours
+
+$white: #FBFAF6;
+$black: #1B1B1B;
+$background-colour: #F8D6B3;
+$primary-colour: #E78FB3;
+$primary-colour-hover: #d16b96;
+$black-hover: #3d3d3d;
+$white-hover: #c9c9c9;
+
+//breakpoints
+$breakpoint-laptop: 1200px;
+$breakpoint-tablet: 900px;
+$breakpoint-mobile: 400px;
+
+//misc
+$bottom-border: 1px solid black;
+$full-border: 2px solid black;
+$dropshadow: 5px 5px 0px #000000;
+
+$lrg-p: 18px;
+$sml-p: 14px;
+
+$content-padding: 0px 50px;
+
+
+
+//mixins
+
+
+
+@mixin link-white {
+    color: $white;
+    &:hover {
+        color: $white-hover;
+    }
+}
+
+@mixin intro{
+    background-color: $background-colour;
+    padding: 50px;
+    border-bottom: $bottom-border;
+}
+
+@mixin basic-btn{
+    color: $black;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0px #000000;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    transition: top ease 0.5s;
+    font-weight: 500;
+    background-color: transparent;
+
+    &:hover {
+        box-shadow: none;
+        right: -2px;
+        bottom: -2px;
+    }
+
+}
+
+@mixin register-btn {
+    color: $black;
+    background-color: $primary-colour;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0px #000000;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    transition: top ease 0.5s;
+    font-weight: 500;
+
+    &:hover {
+        box-shadow: none;
+        right: -2px;
+        bottom: -2px;
+        background-color: $primary-colour-hover;
+    }
+
+}
+
+
